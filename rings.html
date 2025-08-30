@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Best Jewellery Design</title>
+  <link rel="shortcut icon" type="x-icon" href="images/logo1.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!--Bootstrap Icons  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="shop.css">
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle-fill"></i></button>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-auto" href="index.html"><img src="images/logo.png" alt=""></a>
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="images/logo.png" alt=""></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center  flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="rings.html">Rings</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="necklace.html">Necklace</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex d-lg-none" role="search">
+              <input class="form-control me-2 border-0" type="search" placeholder="Search" aria-label="Search">
+              <button class="search" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+        <a href="#exampleModal1" data-bs-toggle="modal" class="login"><i class="bi bi-person-circle"></i> Login</a>
+        <a href="cart.html" class="cart"><i class="bi bi-cart"></i> Cart</a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="container-fluid header2">
+      <div class=" container my-5">
+        <div class="row align-items-center row-cols-1 row-cols-md-2">
+          <div class="col">
+            <img src="images/set5.png" alt="" class="img-fluid">
+          </div>
+          <div class="col">
+            <h2 class="">Best Jewellery Collection</h2>
+            <p>Give Her a Symbol of Your Never-Ending Love</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row text-center d-lg-none bg-white border py-3 g-0">
+          <div class="col">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+              aria-controls="offcanvasBottom"><svg width="20" height="20" viewBox="0 0 256 256">
+                <path fill="none" d="M0 0h256v256H0z"></path>
+                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                  d="m144 168 40 40 40-40M184 112v96M48 128h72M48 64h136M48 192h56"></path>
+              </svg>sort</button>
+          </div>
+          <div class="col border-start">
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop"><svg width="20" height="20" viewBox="0 0 256 256">
+                <path fill="none" d="M0 0h256v256H0z"></path>
+                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                  d="M148 172H40M216 172h-28"></path>
+                <circle cx="168" cy="172" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12"></circle>
+                <path fill="none" stroke="#111112" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"
+                  d="M84 84H40M216 84h-92"></path>
+                <circle cx="104" cy="84" r="20" fill="none" stroke="#111112" stroke-linecap="round"
+                  stroke-linejoin="round" stroke-width="12"></circle>
+              </svg>filter</button>
+          </div>
+        </div>
+        <div class="row bg-white g-3">
+          <div class="col-2 d-none d-lg-block">
+            <div class="row bg-white">
+              <div class="col">
+              </div>
+            </div>
+            <div class="row bg-white">
+              <div class="col">
+
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <h3 class="text-center my-3"><i class="bi bi-stars"> </i>Filters</h3>
+
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">
+                        Categories
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Necklaces
+                            (5)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Rings
+                            (7)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Bracelets
+                            (5)
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Earring
+                            (8)
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseTwo">
+                        Carat
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            14kT
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            18KT
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            20KT
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            24KT
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">
+                        Choice of Metal
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Silver
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Gold
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Diamond
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Pearl
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFour">
+                        Customer Ratings
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            4★ & above
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            3★ & above
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            2★ & above
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            1★ & above
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseFive">
+                        Discount
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Silver 2%
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Gold 3%
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Diamond 4%
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            Pearl 5%
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-10">
+            <div class="bg-white">
+              <div class="row">
+                <div class="col d-none d-lg-block">
+                  <p class="text-body-secondary fs-6 lh-sm">
+                    <small>
+                      <nav
+                        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                          <li class="breadcrumb-item"><a href="shop.html">Shop</a></li>
+                        </ol>
+                      </nav>
+                    </small>
+                  </p>
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link results">Showing 1–8 results</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 product text-center">
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/ri2.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/ri3.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/ri6.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/shop8.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/shop5.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/set8.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/ri1.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-6">
+                  <div class="card">
+                    <img src="images/ri4.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title pb-2">Ring</h5>
+                      <a href="add.html" class="btncart">Buy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row my-3">
+                <div class="col p-0">
+                  <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg justify-content-center">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item ">
+                        <a class="page-link" href="#">1</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal1 -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content" style="position: relative;">
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+            style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+              fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+          </button>
+          <div class="modal-body p-0">
+            <div class="container-fluid g-0">
+              <div class="row">
+                <div class="col d-flex flex-column p-5">
+                  <div class="row mb-5 pb-5">
+                    <div class="col">
+                      <form class="row g-3">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Enter Email/Mobile Number</label>
+                          <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                        </div>
+                        <div class="d-grid">
+                          <button class="btn1" type="button">Request OTP</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row align-items-end mt-5 pt-5">
+                    <div class="col text-center ">
+                      <a class="link-dark" href="#exampleModal2" data-bs-toggle="modal">Create an
+                        account</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content" style="position: relative;">
+          <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"
+            style="position: absolute; right: -50px;"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+              fill="#fff" class="bi bi-x-lg" viewBox="0 0 24 24">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+            </svg>
+          </button>
+          <div class="modal-body p-0">
+            <div class="container-fluid g-0">
+              <div class="row">
+                <div class="col d-flex flex-column p-5">
+                  <div class="row mb-5 pb-5">
+                    <div class="col">
+                      <form class="row g-3">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                          <label for="floatingInput">Enter Mobile Number</label>
+                          <p><small>By continuing, you agree to Gadget's Terms of Use and Privacy Policy.</small></p>
+                        </div>
+                        <div class="d-grid">
+                          <button class="btn2" type="button">Continue</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="row align-items-end mt-5 pt-5">
+                    <div class="col text-center ">
+                      <a class="link-dark" href="exampleModal1" data-bs-toggle="modal">Existing User? Log in</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- off-canvas-sort -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasBottomLabel">SORT BY</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body small p-0">
+        <ul class="list-group">
+          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+            Popularity
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+
+            </div>
+          </li>
+          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+            Price -- Low to High
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+
+            </div>
+          </li>
+          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+            Price -- High to Low
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+
+            </div>
+          </li>
+          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+            Newest First
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- off-canvas-filter -->
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Filters</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="d-flex align-items-start">
+          <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+              type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Categories</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile"
+              type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Carat</button>
+            <button class="nav-link" id="v-pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#v-pills-disabled"
+              type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">Choice of Metal</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages"
+              type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Customer Ratings</button>
+            <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings"
+              type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Discount</button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
+              tabindex="0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Necklaces
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Rings
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Bracelets
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Earrrings
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"
+              tabindex="0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  14kt
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  18KT
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  20KT
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  24KT
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab"
+              tabindex="0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Silver
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Gold
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Diamond
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pearl
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"
+              tabindex="0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  4★ & above
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  3★ & above
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  2★ & above
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  1★ & above
+                </label>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"
+              tabindex="0">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Silver 2%
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Gold 3%
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Diamond 4%
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Pearl 5%
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-12 col-lg-4 text-center text-md-start order-4 order-lg-0">
+            <img src="images/footer-logo.png" alt="" width="150px" height="auto">
+            <p>Jewellery is like a biography, a story that tells the many chapters of your life.</p>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <p>&copy; 2025 www.zevar.com. All rights reserved.</p>
+          </div>
+          <div class="col-4 offset-lg-1 col-lg-3 text-center text-md-start">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">about</a></li>
+              <li><a href="#">feature</a></li>
+              <li><a href="#">works</a></li>
+              <li><a href="#">career</a></li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg-2 text-center text-md-start">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">customer support</a></li>
+              <li><a href="#">delivery details</a></li>
+              <li><a href="#">terms & conditions</a></li>
+              <li><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="col-4 col-lg-2 text-center text-md-start">
+            <h3>Faq</h3>
+            <ul>
+              <li><a href="#">account</a></li>
+              <li><a href="#">manage deliveries</a></li>
+              <li><a href="#">orders</a></li>
+              <li><a href="#">payments</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    // scroll button
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
